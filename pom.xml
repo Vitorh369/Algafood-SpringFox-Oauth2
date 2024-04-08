@@ -7,7 +7,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.7.10</version>
-        <relativePath /> <!-- lookup parent from repository -->
+        <relativePath /> 
     </parent>
     <groupId>com.algaworks2</groupId>
     <artifactId>algalfood-api2</artifactId>
@@ -22,7 +22,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -45,7 +44,7 @@
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId><!-- seguraça aula 22.11-->
+            <groupId>org.springframework.boot</groupId>
             <artifactId>
                 spring-boot-starter-oauth2-resource-server
             </artifactId>
@@ -56,7 +55,7 @@
             <version>10.4</version>
         </dependency>
         <dependency>
-            <groupId>org.springframework.security</groupId><!-- Gerando JWT com chave simetrica (HMAC SHA 256) no Authorization Server aula 23.5-->
+            <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-jwt</artifactId>
             <version>1.0.11.RELEASE</version>
         </dependency>
@@ -65,8 +64,7 @@
             <artifactId>spring-security-oauth2</artifactId>
             <version>2.3.8.RELEASE</version>
         </dependency>
-       
-        <dependency>
+      <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
             <scope>runtime</scope>
@@ -76,30 +74,24 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
-
         <dependency>
-            <groupId>org.springframework.boot</groupId><!--24.20. Configurando o Spring Session Data Redis -->
+            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework.session</groupId><!--24.20. Configurando o Spring Session Data Redis -->
+            <groupId>org.springframework.session</groupId>
             <artifactId>spring-session-data-redis</artifactId>
         </dependency>
-        
-        
         <dependency>
             <groupId>org.modelmapper</groupId>
             <artifactId>modelmapper</artifactId>
             <version>3.1.1</version>
         </dependency>
-
-
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
             <scope>runtime</scope>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
@@ -114,27 +106,21 @@
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
-
-        
-          <dependency>
+       <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
         </dependency>
-
-   
-       
-        
-        <dependency>
-            <groupId>org.flywaydb</groupId><!--Para db migration! historico de banco de dados -->
+       <dependency>
+            <groupId>org.flywaydb</groupId>
             <artifactId>flyway-core</artifactId>
         </dependency>
         <dependency>
             <groupId>org.flywaydb</groupId>
-            <artifactId>flyway-mysql</artifactId><!--Para db migration! historico de banco de dados -->
+            <artifactId>flyway-mysql</artifactId>
         </dependency>
         <dependency>
             <groupId>io.rest-assured</groupId>
-            <artifactId>rest-assured</artifactId><!--Biblioteca para teste ded api-->
+            <artifactId>rest-assured</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -142,22 +128,22 @@
             <artifactId>commons-lang3</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.github.bohnman</groupId><!--Biblioteca para ajudar a limitar as propridade usando jackson-->
+            <groupId>com.github.bohnman</groupId>
             <artifactId>squiggly-filter-jackson</artifactId>
             <version>1.3.18</version>
         </dependency>
         <dependency>
-            <groupId>net.sf.jasperreports</groupId><!--Biblioteca do jasper-->
+            <groupId>net.sf.jasperreports</groupId>
             <artifactId>jasperreports</artifactId>
             <version>6.20.6</version>
         </dependency>
         <dependency>
-            <groupId>net.sf.jasperreports</groupId><!--Biblioteca do jasper-->
+            <groupId>net.sf.jasperreports</groupId>
             <artifactId>jasperreports-functions</artifactId>
             <version>6.20.6</version>
         </dependency>
         <dependency>
-            <groupId>com.amazonaws</groupId><!--Biblioteca do amazon s3-->
+            <groupId>com.amazonaws</groupId>
             <artifactId>aws-java-sdk-s3</artifactId>
             <version>1.12.336</version>
         </dependency>
@@ -166,27 +152,24 @@
                     <artifactId>aws-java-sdk</artifactId>
                     <version>1.11.1000</version>
                 </dependency>
-
-
-            <dependency>
-            	<groupId>org.springframework.boot</groupId> <!--configuracao do aplicattion properties. adicionado na aula 14.20    --> 
+                 <dependency>
+            	<groupId>org.springframework.boot</groupId>
             	<artifactId>spring-boot-configuration-processor</artifactId>
             	<optional>true</optional>
             </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId> <!--dependecina para uso de email -->
+            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-mail</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId><!--Biblioteca do para templates. html e css aula 15.5-->
+            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-freemarker</artifactId>
         </dependency>
-
-        <dependency>
-            <groupId>io.springfox</groupId><!--biblioteca para documentacao do projeto -->
+         <dependency>
+            <groupId>io.springfox</groupId>
             <artifactId>springfox-boot-starter</artifactId>
             <exclusions>
-               <exclusion> <!--exclusion serva para excluir algum pacote da dependencia. por exemplo conflito de duas dependicia com mesmo pacote com versoses diferentes  -->
+               <exclusion> 
                    <groupId>com.google.guava</groupId>
                    <artifactId>guava</artifactId>
                </exclusion>
@@ -194,7 +177,7 @@
             <version>3.0.0</version>
         </dependency>
         <dependency>
-            <groupId>io.springfox</groupId><!--biblioteca para documentacao do projeto -->
+            <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger-ui</artifactId>
             <version>3.0.0</version>
             <exclusions>
@@ -206,8 +189,8 @@
         </dependency>
         
         <dependency>
-            <groupId>io.springfox</groupId><!--biblioteca para documentacao do projeto -->
-            <artifactId>springfox-bean-validators</artifactId><!-- biblioteca do springfox para integracao com bean validation-->
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-bean-validators</artifactId>
             <version>3.0.0</version>
             <exclusions>
                 <exclusion>
@@ -217,16 +200,15 @@
             </exclusions>
         </dependency>
         <dependency>
-            <groupId>com.fasterxml.jackson.datatype</groupId><!--dependendecina para documentacao aula 18.14 -->
+            <groupId>com.fasterxml.jackson.datatype</groupId>
             <artifactId>jackson-datatype-jsr310</artifactId>
         </dependency>
         <dependency>
-              <groupId>org.logback-extensions</groupId><!-- depedencia para log aula 21.4-->
+              <groupId>org.logback-extensions</groupId>
               <artifactId>logback-ext-loggly</artifactId>
               <version>0.1.5</version>
         </dependency>
-      
-      <dependency>
+         <dependency>
             <groupId>javax.xml.bind</groupId>
             <artifactId>jaxb-api</artifactId>
         </dependency>
@@ -246,10 +228,8 @@
             <artifactId>spring-boot-configuration-processor</artifactId>
             <optional>true</optional>
         </dependency>
-        
     </dependencies>
-
-    <build>
+   <build>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
@@ -270,27 +250,14 @@
                 </configuration>
             </plugin>
             <plugin>
-                <artifactId>maven-failsafe-plugin</artifactId>  <!-- para que os
-                teste de integracao nao seja adcionado quando for fazer o
-                builder do projeto  -->
+                <artifactId>maven-failsafe-plugin</artifactId> 
             </plugin>
-<!--              <plugin>-->
-<!--                <groupId>org.apache.maven.plugins</groupId>-->
-<!--                <artifactId>maven-jar-plugin</artifactId>-->
-<!--                <configuration>-->
-<!--                    <archive>-->
-<!--                        <manifest>-->
-<!--                            <mainClass>com.algaworks.algafood</mainClass>-->
-<!--                        </manifest>-->
-<!--                    </archive>-->
-<!--                </configuration>-->
-<!--            </plugin>-->
         </plugins>
     </build>
     <profiles>
         <profile>
-            <id>docker</id><!--serve para criarmos uma imagem direto com maven -->
-            <build>         <!-- aula 24.11. Construindo a imagem Docker pelo Maven-->
+            <id>docker</id>
+            <build>      
                 <plugins>
                     <plugin>
                       <groupId>com.spotify</groupId>
@@ -308,7 +275,7 @@
                       <configuration>
                         <repository>algafood-api</repository>
                             <buildArgs>
-                          <JAR_FILE>${project.build.finalName}.jar</JAR_FILE><!--usamos a tag JAR_FILE  no arquivo Dockerfile. serve para reconhece a versao do projeto toda vez q fazmos um build vai alterar automaticamente-->
+                          <JAR_FILE>${project.build.finalName}.jar</JAR_FILE>
                         </buildArgs>
                       </configuration>
                     </plugin>
